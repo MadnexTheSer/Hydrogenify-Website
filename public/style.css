@@ -1,0 +1,895 @@
+@import "variables.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---------- Global --------*/
+/*****************************************************************************************************************************************/
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+    font-weight: 550;
+    margin: 10px 0;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+/*---------- Navigation bar --------*/
+/*****************************************************************************************************************************************/
+
+.nav-bar {
+    position: fixed;
+    top: -150px;
+    width: 88%;
+    background: var(--transparent-white);
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0.2% 6% 0.2% 6%;
+    transition: 0.3s;
+    box-shadow: 0 40px 40px -1px var(--box-shadow);
+
+}
+
+.nav-logo {
+    width: 400px;
+    transition: 0.3s;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 8px 12px;
+
+}
+
+.nav-links-list {
+    font-size: 20px;
+    transition: 0.3s
+    
+}
+
+.nav-links-list-items {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.nav-links-list-items:hover {
+    color: var(--green);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.nav-links li::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: var(--green);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+    
+}
+
+/*---------- Landing --------*/
+/*****************************************************************************************************************************************/
+
+.landing {
+    height: 100%;
+    width: 100%;
+    
+    min-height: 100vh;
+    /* background-image: linear-gradient(rgba(4,9,30,0.25), rgba(4,9,30,0.25)), url(design/images/background_pure_hydrogen.jpg);
+    background-position: center;
+    background-size: cover; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    color: white;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+}
+.landing .video-player {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0 auto;
+}
+.landing .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* add additional styles for the text box here */
+}
+
+.text-box h1 {
+    position: relative;
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+  
+/* Underlines the h1 tag. 
+  .text-box h1::after {
+    margin-bottom: 10px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 80%;
+    height: 3.5px;
+    background-color: var(--responsive-green);
+    z-index: -1; /* add a negative z-index to position the underline behind the text 
+    transform: translateX(-50%); /* use transform to center the underline relative to the h1 text 
+  } */
+
+.text-box p{
+    margin: 0px 0 40px;
+    font-size: 21px;
+    font-weight: 480;
+    line-height: 170%;
+    color: var(--dirty-white);
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 12px 34px;
+    font-size: 18px;
+    font-weight: 550;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.hero-btn:hover{
+    border: 1px solid var(--green);
+    background: var(--green);
+    font-weight: bolder;
+}
+
+
+
+/*---------- Services --------*/
+/*****************************************************************************************************************************************/
+
+.services{
+    width: 80%;
+    margin: -20px auto -20px auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services .row{
+    padding-bottom: 50px;
+
+}  
+.services-left{
+    flex-basis: 31%;
+    background: var(--light-green);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.services-left p{
+    color: rgb(58, 58, 58);
+}
+
+.services-left:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.services-middle{
+    flex-basis: 31%;
+    background: rgba(122, 122, 122, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.services-middle p{
+    color: rgb(58, 58, 58);
+}
+
+.services-middle:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.services-right{
+    flex-basis: 31%;
+    background: rgba(43, 142, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.services-right p{
+    color: rgb(58, 58, 58);
+}
+
+.services-right:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*---------------- Global Partners ----------------*/
+/*****************************************************************************************************************************************/
+
+.partners{
+    width: 100%;
+    margin: -20px auto -20px auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: var(--green);
+
+}
+.partners-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.partners h1, p{
+    color: var(--white);
+}
+.partners-col h3, p {
+    color: var(--white);
+}
+.partners img{
+    width: 107%;
+}
+.statistics{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.statistics h4{
+    color: var(--white);
+    font-size: 70px;
+    font-weight: 600;
+}
+.statistics table{
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.partners-col .statistics p{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 400;
+}
+.line-1 {
+    margin-top: -155px;
+    margin-left: 20vh;
+    height: 150px;
+    width: 0.15vh;
+    background-color: var(--white);
+}
+.line-2 {
+    margin-top: -155px;
+    margin-left: 20vh;
+    height: 150px;
+    width: 0.15vh;
+    background-color: var(--white);
+}
+.line-3 {
+    margin-top: -155px;
+    margin-left: 20vh;
+    height: 150px;
+}
+/*-------------- Products ----------------*/
+/*****************************************************************************************************************************************/
+
+
+.products{
+    width: 80%;
+    margin: -20px auto -20px auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.products-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+    color: var(--black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+.products-col img{
+    width: 70%;
+    border-radius: 10px;
+}
+.products-col p{
+    
+    color: var(--black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+.products-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/* Projects */
+/*****************************************************************************************************************************************/
+
+.projects {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: -20px auto -20px auto;
+    text-align: center;
+ 
+}
+
+.projects-header {
+    width: 80%;
+    padding: 100px 0 0 0 ;
+}
+
+.projects-gallery-row {
+    width: 80%;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 50px;  
+    padding-top: 50px;
+
+}
+
+.projects-gallery-row-element {
+    flex-basis: 30%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.projects-gallery-row-element img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-hover-layer {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+
+}
+
+.project-hover-layer:hover {
+    background: var(--hover-green);
+
+}
+
+.project-hover-layer h3{
+    font-weight: 500;
+    color: var(--white);
+    font-size: 22px;
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+    line-height: 1.35;
+    padding-top: 200px;
+    width: 70%;
+}
+
+.project-hover-layer:hover h3 {
+    opacity: 1;
+    padding: 0;
+}
+
+.project-hover-layer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background: var(--white);
+    border: 2px solid var(--white);
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 2px 35px;
+    font-size: 16px;
+}
+
+.project-hover-layer a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+
+}
+
+.padding-hack {
+    height: 10px;
+}
+
+
+/*-------- Call To Action ----------*/
+/*****************************************************************************************************************************************/
+
+
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(design/images/background_pure_hydrogen.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: var(--white);
+    margin-bottom: 40px; 
+    padding: 0; 
+}
+
+
+/*--------------- About Us Page --------------*/
+/*****************************************************************************************************************************************/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(design/images/background_hydrogen_decade.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--white);
+}
+.sub-header h1{
+    padding-top: 200px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 10px 2px;
+    
+}
+.about-col h1{
+    padding-top: 0;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2;
+
+}
+.about-col p{
+    padding: 15px 0 25px; 
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+
+.hero-btn.green-btn{
+    border: 1px solid var(--green);
+    background: transparent;
+    color: var(--green);
+}
+.hero-btn.green-btn:hover{
+    border: 1px solid var(--green);
+    background: var(--green);
+    color: var(--white);
+}
+.hero-btn.green-btn::after{
+    background: var(--green);
+}
+.hero-btn.green-btn::before{
+    background: var(--green);
+}
+.content-image{
+    flex-basis: 50%;
+}
+.about-col img{
+    width: 100%;
+}
+
+/*------- Contact Us Page ------------*/
+/*****************************************************************************************************************************************/
+
+.location{
+    margin: auto;
+    padding: 30px 0;
+}
+.location iframe{
+    width: 80%;
+    padding-left: 10%;
+
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.form-received {
+    flex-basis: 60%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.form-received h1{
+    font-size: 30px;
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--green);
+    margin-top: 10vh;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: var(--green);
+    margin: 10px;
+    margin-right: 30px;
+}
+    
+.contact-col div p{
+    padding: 0;
+    color: var(--green);
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+    
+}
+.contact-col input, .contact-col textarea{
+    min-width: 100%;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.contact-col button{
+    width: 105%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+}
+.contact-col button.hero-btn.green-btn.detailed{
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+}
+
+/*------- Inquiry Page ------------*/
+/*****************************************************************************************************************************************/
+
+.inquiry-form{
+    padding-bottom: 45px;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.inquiry{
+    width: 80%;
+    margin: auto;
+}
+.inquiry-col{
+    flex-basis: 110%;
+}
+.form-received {
+    flex-basis: 60%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.form-received h1{
+    font-size: 30px;
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--green);
+    margin-top: 10vh;
+}
+
+.inquiry-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.inquiry-col div .fa{
+    font-size: 28px;
+    color: var(--green);
+    margin: 10px;
+    margin-right: 30px;
+}
+    
+.inquiry-col div p{
+    padding: 0;
+    color: var(--green);
+}
+.inquiry-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+    
+}
+.inquiry-col-form input, .inquiry-col-form textarea{
+    min-width: 100%;
+    width: 100%;
+    padding: 15px 40px 15px 15px;
+    margin-bottom: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.inquiry-col-form button{
+    width: 108%;
+    padding: 15px 40px 15px 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+} 
+
+
+/*Partners Banners*/
+/*****************************************************************************************************************************************/
+
+.partners-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0;
+    background-color: rgba(31, 161, 129, 0.06);
+}
+
+.partners-flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 80%;
+}
+.partners-col p{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+.partners-flex-img-box {
+    height: 100px;
+}
+
+.partners-flex-img-long {
+    height: 60px;
+}
+
+
+/*Lightbox*/
+/*****************************************************************************************************************************************/
+
+.full-flex {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+ 
+ .project-dialog {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     width: 80%;
+     padding: 150px 0 90px;
+     gap: 25px;
+ }
+ 
+ .text-flex-child {
+     width: 35%;
+     padding: 50px 30px;
+     background-color: var(--light-green);
+ }
+ 
+ .text-flex-child h2 {
+     font-size: 25px;
+     text-align: center;
+     padding-bottom: 25px;
+ 
+ }
+ 
+ .text-flex-child p {
+     color: var(--black);
+     text-justify: auto;
+     padding: 0 0 15px 0;
+     font-size: 18px;
+ 
+ }
+ 
+ .text-flex-child ul {
+     list-style: square inside;
+     color: var(--black);
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 22px;
+ }
+ 
+ .img-flex-child {
+     width: 55%;
+     aspect-ratio: 4 / 3;
+ }
+ 
+ .gallery {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .gallery-cell {
+     width: 100%;
+     margin-right: 10px;
+ }
+ 
+ .gallery-cell img {
+     border-radius: 5px;
+     width: 100%;
+     height: 100%;
+ }
+
+/*--------------Footer---------------*/
+/*****************************************************************************************************************************************/
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 45px 0;
+    background-color: rgba(31, 161, 129, 0.06);
+
+}
+.footer h4{
+    color: var(--black);    
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: 600;
+}
+.footer p{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+/*--------------TryProducts---------------*/
+/*****************************************************************************************************************************************/
+.try-table{
+    width: 80%;
+    margin: -20px auto -20px auto;
+    padding-top: 100px;
+}
+.try-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+    color: var(--black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+.try-col p{
+    color: var(--black);
+    text-align: left;
+
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+.try-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
