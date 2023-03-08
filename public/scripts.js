@@ -34,7 +34,6 @@ if(window.innerWidth > 1100) {
     if (window.innerWidth > 1100) {
         if (document.body.scrollTop > (window.innerHeight * 0.3) || document.documentElement.scrollTop > (window.innerHeight * 0.3)) {
           document.getElementById("nav-js-home").style.top = "0";
-
           if (document.getElementById("logo-js-home")) {
             document.getElementById("logo-js-home").style.width = "350px";
             document.getElementById("logo-js-home").src = "design/images/hydrogenify_logo_green_text.png";
@@ -69,7 +68,23 @@ if(window.innerWidth > 1100) {
 
 
 
-if(window.innerWidth < 1100) {
+  if(window.innerWidth < 1100) {
+    
+    if (document.body.scrollTop > (window.innerHeight * 0.2) || document.documentElement.scrollTop > (window.innerHeight * 0.2)) {
+      document.getElementById("nav-js-home").style.top = "0";
+      if (document.getElementById("logo-js-home")) {
+        document.getElementById("logo-js-home").src = "design/images/hydrogenify_logo_green_text.png";
+
+      }
+      if (document.getElementById("logo-js")) {
+        document.getElementById("logo-js").src = "../design/images/hydrogenify_logo_green_text.png";
+
+      }
+    }
+    else{
+      document.getElementById("nav-js-home").style.top = "-250px";
+
+    }
     if(isInViewport(phoneScroll1)) {
         phoneScroll1.style.backgroundColor = "var(--hover-green)";
         phoneScroll1h3.style.opacity = "1";
@@ -100,6 +115,6 @@ if(window.innerWidth < 1100) {
         phoneScroll3h3.style.opacity = "0";
         phoneScroll3h3.style.paddingTop = "200px";
     }
-}
+  }
 
 }

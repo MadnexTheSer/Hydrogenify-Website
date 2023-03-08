@@ -5,6 +5,9 @@
 
 @media(max-width: 1100px)
 {
+    .nav-bar-home{
+        top: -150px;
+    }
    .nav-links ul li
     {
         display: block;
@@ -47,6 +50,8 @@
 @media (max-width:700px){
     .row{
         flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
     }
 } 
 
@@ -134,10 +139,18 @@
 /*****************************************************************************************************************************************/
 
 @media screen and (max-width: 1600px) {
-    .services {
+    .services-section {
         height: auto;
     }
 
+    .services-section-page{
+        height: auto;
+    }
+    .hero-btn.green-btn{
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
     .services-header {
         width: 70%;
     }
@@ -224,7 +237,11 @@
 /*****************************************************************************************************************************************/
 
 @media screen and (max-width: 1100px) {
-    .partners img {
+    .partners-section{
+        height: auto;
+
+    }
+    .partners-section img {
         width: 108%;
     }
 
@@ -361,11 +378,23 @@
     }
 }
 
-
+/*Products*/
+/*****************************************************************************************************************************************/
+@media screen and (max-width: 1600px) {
+    .products-section{
+        height: auto;
+    }
+}
 /*Projects*/
 /*****************************************************************************************************************************************/
 
 @media screen and (max-width: 1600px) {
+    .projects-section{
+        width: 90%;
+        height: auto;
+        margin: -150px auto 70px auto;
+
+    }
     .projects-gallery-row-element {
         flex-basis: 40%;
     }
@@ -428,9 +457,16 @@
 /*Contact Us*/
 /*****************************************************************************************************************************************/
 @media  screen and (max-width: 1100px) {
-    .contact-us{
+    .contact-us-section{
         width: 84%;
         margin: auto;
+        height: auto;
+
+    }
+    .contact-us-section-form{
+        width: 84%;
+        margin: auto;
+        height: auto;
 
     }
     .contact-col button.hero-btn.green-btn.detailed{
@@ -445,14 +481,27 @@
         width: 100%;
     }
 }
+/*About Us*/
+/*****************************************************************************************************************************************/
+@media  screen and (max-width: 1100px) {
+    .about-us-section{
+        height: auto;
+        margin: -20px auto 80px auto;
+
+    }
+
+}
+
 /*Inquiry*/
 /*****************************************************************************************************************************************/
 @media  screen and (max-width: 1100px) {
-    .inquiry-form{
+    .inquiry-form-section{
         width: 90%;
         padding-left: 2%;
+        height: 145vh;
+
     }
-    .inquiry{
+    .inquiry-section{
         width: 91%;
         margin: auto;
     }
@@ -466,15 +515,15 @@
 
     } 
 }
-/*Partners-Footer*/
+/*banners-Footer*/
 /*****************************************************************************************************************************************/
 
 @media screen and (max-width: 1600px) {    
-    .partners-flex-img-box {
+    .banners-flex-img-box {
         height: 50px;
     }
     
-    .partners-flex-img-long {
+    .banners-flex-img-long {
         height: 50px;
     }
     .european-clean-hydrogen-alliance_en{
@@ -485,32 +534,35 @@
 
 
 @media screen and (max-width: 1100px) {    
-    .partners-flex-box {
+    .banners-section{
+        height: auto;
+    }
+    .banners-flex-box {
         gap: 50px;
     }
-    .partners-flex-img-box {
+    .banners-flex-img-box {
         height: 50px;
     }
 
 }
 
 @media screen and (max-width: 768px) {    
-    .partners-section h1 {
+    .banners-section h1 {
         font-size: 28px;
         width: 80%;
         text-align: center;
 
     }
     
-    .partners-flex-box {
+    .banners-flex-box {
         gap: 50px;
     }
     
-    .partners-flex-img-box {
+    .banners-flex-img-box {
         height: 50px;
     }
     
-    .partners-flex-img-long {
+    .banners-flex-img-long {
         height: 40px;
     }
 
@@ -520,15 +572,15 @@
 @media screen and (max-width: 768px) {    
 
     
-    .partners-flex-box {
+    .banners-flex-box {
         gap: 30px;
     }
     
-    .partners-flex-img-box {
+    .banners-flex-img-box {
         height: 40px;
     }
     
-    .partners-flex-img-long {
+    .banners-flex-img-long {
         height: 30px;
     }
 }
@@ -537,45 +589,17 @@
 /*****************************************************************************************************************************************/
 
 @media screen and (max-width: 768px) {    
+    .footer{
+        height: 100%;
+    }
     .footer-flex {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 70%;
     }
-        
-    h2 {
-        font-size: 16px;
-    }
-    
-    .footer li {
-        font-size: 14px;    
-    }
-    
-    .l-footer {
-        flex-basis: 100px;
-        margin: auto;
-    }
-
-    .l-footer h2 {
-        text-align: center;
-        padding-bottom: 5px;
-    }
-
-    
-    .l-footer p {
-        font-size: 14px;
-        padding: 0;
-    }   
-    
-    .r-footer {
-        flex-basis: 100px;
-    }
-
-    .r-footer h2 {
-        text-align: center;
-        padding-bottom: 5px;
-        margin: 0;
+    .footer h4{
+        padding-top: 30px;
     }
 }
 

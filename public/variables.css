@@ -4,7 +4,7 @@
     --text-color: rgb(54, 54, 54);
     --box-shadow: rgba(0,0,0,.2);
 
-    --transparent-white: rgba(255, 255, 255, 0);
+    --transparent-white: rgba(255, 255, 255, 0.367);
     --white: #ffffff;
     --dirty-white: rgb(255, 255, 255);
     --header-white: rgba(255, 255, 255, 0.450);

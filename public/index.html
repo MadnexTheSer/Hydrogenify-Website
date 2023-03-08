@@ -33,7 +33,7 @@
 <body>
 
 <nav>
-<div class="nav-bar" id="nav-js-home">
+<div class="nav-bar-home" id="nav-js-home">
     <a href="index.html">
     <img class="nav-logo" id="logo-js-home" src="design/images/logo_hydrogenify.png">
     </a>
@@ -53,7 +53,7 @@
 </nav>
 
 
-<!---------- Landing ----------->
+<!---------- landing ----------->
 
 <div class="landing" onclick="hideMenu()">
     <nav>
@@ -74,33 +74,113 @@
 
 <!---------- services ----------->
     
-    <section class="services" id="services" onclick="hideMenu()"> 
-        <h1>Services We Offer</h1>
-        <p>The company provides innovative <strong>hydrogen</strong> solutions for energy challenges.</p>
+<section class="services-section" id="services" onclick="hideMenu()"> 
+    <h1>Services We Offer</h1>
+    <p>We provide innovative <strong>hydrogen</strong> solutions for energy challenges.</p>
+    <div class="row">
+        <div class="services-left">
+            <h3>Expert Consultation</h3>
+            <p>
+                We prioritize your energy needs! Our team of experts will work with you to understand your unique requirements, and provide customized hydrogen solutions to ensure optimal performance and meet your specific needs.
+            <div class="services-card-row-element-img">
+                <img src="/Hydrogenify-Website/public/design/images/expert_consultation.png">
+            </div>
+        </div>
+        <div class="services-middle">
+            <h3>Installation</h3>
+            <p>
+                We specialize in the installation of hydrogen energy systems for businesses and industries. Our team of experts ensures seamless integration, optimizing performance for a reliable and efficient energy solution.
+            </p>
+            <div class="services-card-row-element-img">
+                <img src="/Hydrogenify-Website/public/design/images/expert_installation.png">
+            </div>
+        </div>
+        <div class="services-right">
+            <h3>Maintenance</h3>
+            <p>
+                <strong>Hydrogenify Ltd</strong> ensures optimal performance of your hydrogen systems with expert maintenance services. Trust in our skilled technicians to keep your systems running smoothly, reducing downtime and maximizing efficiency.
+            </p>
+            <div class="services-card-row-element-img">
+                <img src="/Hydrogenify-Website/public/design/images/expert_maintenance.png">
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!---------- products ---------->
+
+<section class="products-section" onclick="hideMenu()">
+    <h1>Our Products</h1>
+    <p class="products-col">
+        <strong>Hydrogenify Ltd</strong> offers innovative hydrogen energy solutions with our cutting-edge <strong>Hydrogenera®</strong> systems series <strong>AEM and AEM Z</strong>.
+    </p>
         <div class="row">
-            <div class="services-left">
-                <h3>Expert Consultation</h3>
-                <p>
-                    We prioritize your energy needs! Our team of experts will work with you to understand your unique requirements, and provide customized hydrogen solutions to ensure optimal performance and meet your specific needs.
-                </div>
-            <div class="services-middle">
-                <h3>Installation</h3>
-                <p>
-                    We specialize in the installation of hydrogen energy systems for businesses and industries. Our team of experts ensures seamless integration, optimizing performance for a reliable and efficient energy solution.
+            <div class="products-col">
+                <img src="design/images/GI_5000.webp">
+                <h3>AEM by Hydrogenera®</h3>
+                <p class="products-col">
+                    <strong>AEM</strong> by <strong>Hydrogenera®</strong> is a modifiable hydrogen energy saving solution for heavy industry, transport, heating, gas transmission, storage, and hydrogen valleys. 
+                    <br>The system is designed as a puzzle, allowing for modular and flexible configuration to meet specific project needs, while being fully autonomous and automated with built-in safety systems.
                 </p>
             </div>
-            <div class="services-right">
-                <h3>Maintenance</h3>
-                <p>
-                    <strong>Hydrogenify Ltd</strong> ensures optimal performance of your hydrogen energy systems with expert maintenance services. Trust in our skilled technicians to keep your systems running smoothly, reducing downtime and maximizing efficiency.
+            <div class="products-col">
+                <img src="design/images/GI_5000.webp">
+                <h3>AEM Z by Hydrogenera®</h3>
+                <p class="products-col">
+                    <strong>AEM Z</strong> by <strong>Hydrogenera®</strong> offers modifiable <strong>hydrogen</strong> energy saving, production and distribution solutions for a variety of applications, including heavy industry, transportation, heating, and more. 
+                    <br>The systems are fully autonomous, automated, and secure, with built-in safety features, and are designed to provide energy independence through integration into closed-loop renewable energy systems.
+                
                 </p>
             </div>
         </div>
-    </section>
+</section>
     
+<!-- -------Projects Section------ -->
+<section  class="projects-section" id="projects" onclick="hideMenu()">
+
+    <div  class="projects" id="projects">
+
+        <div class="projects-header">
+            <h1>Finalised Projects</h1>    
+        </div>
+        <div class="projects-gallery-row">
+            <div class="projects-gallery-row-element">
+                <img src="design/images/kindergarten.jpg">
+                <div class="project-hover-layer" id="phone-sctoll-1">
+                        <h3 id="phone-sctoll-1-h3">
+                            Kindergarten - Vratsa, Bulgaria <br>  
+                            <div class="padding-hack"></div>                                 
+                            <a href="html/vratsa.html">Learn More</a>
+                        </h3>
+                </div>
+            </div>
+            <div class="projects-gallery-row-element">
+                <img src="design/images/background_hydrogen_decade.jpg  ">
+                <div class="project-hover-layer"  id="phone-sctoll-2">
+                    <h3 id="phone-sctoll-2-h3">
+                        More Information Soon<br>  
+                        <div class="padding-hack"></div>                             
+                        <a href="html/vratsa.html">Learn More</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="projects-gallery-row-element">
+                <img src="design/images/background_hydrogen_decade.jpg  ">
+                <div class="project-hover-layer"  id="phone-sctoll-3">
+                    <h3 id="phone-sctoll-3-h3">
+                        More Information Soon<br>  
+                        <div class="padding-hack"></div>                
+                        <a href="html/vratsa.html">Learn More</a>
+                    </h3>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+
 <!---------- partners ---------->
     
-<section class="partners" onclick="hideMenu()">
+<section class="partners-section" onclick="hideMenu()">
     <h1>Our Global Partners</h1>
     <p>
         Partnering for a sustainable future with <strong>Hydrogenera®</strong> - 
@@ -141,96 +221,26 @@
     </div>
 </section>
 
-<!---------- products ---------->
-
-<section class="products" onclick="hideMenu()">
-    <h1>Our Products</h1>
-    <p class="products-col">
-        <strong>Hydrogenify Ltd</strong> offers innovative hydrogen energy solutions with our cutting-edge <strong>Hydrogenera®</strong> systems series <strong>AEM and AEM Z</strong>.
-    </p>
-        <div class="row">
-            <div class="products-col">
-                <img src="design/images/GI_5000.webp">
-                <h3>AEM by Hydrogenera®</h3>
-                <p class="products-col">
-                    <strong>AEM</strong> by <strong>Hydrogenera®</strong> is a modifiable hydrogen energy saving solution for heavy industry, transport, heating, gas transmission, storage, and hydrogen valleys. 
-                    <br>The system is designed as a puzzle, allowing for modular and flexible configuration to meet specific project needs, while being fully autonomous and automated with built-in safety systems.
-                </p>
-            </div>
-            <div class="products-col">
-                <img src="design/images/GI_5000.webp">
-                <h3>AEM Z by Hydrogenera®</h3>
-                <p class="products-col">
-                    <strong>AEM Z</strong> by <strong>Hydrogenera®</strong> offers modifiable <strong>hydrogen</strong> energy saving, production and distribution solutions for a variety of applications, including heavy industry, transportation, heating, and more. 
-                    <br>The systems are fully autonomous, automated, and secure, with built-in safety features, and are designed to provide energy independence through integration into closed-loop renewable energy systems.
-                
-                </p>
-            </div>
-        </div>
-</section>
-    
-<!-- -------Projects Section------ -->
-
-<div class="projects" id="projects" onclick="hideMenu()">
-
-<div class="projects-header">
-    <h1>Finalised Projects</h1>    
-</div>
-<div class="projects-gallery-row">
-    <div class="projects-gallery-row-element">
-        <img src="design/images/kindergarten.jpg">
-        <div class="project-hover-layer" id="phone-sctoll-1">
-                <h3 id="phone-sctoll-1-h3">
-                    Kindergarten - Vratsa, Bulgaria <br>  
-                    <div class="padding-hack"></div>                                 
-                    <a href="html/vratsa.html">Learn More</a>
-                </h3>
-        </div>
-    </div>
-    <div class="projects-gallery-row-element">
-        <img src="design/images/background_hydrogen_decade.jpg  ">
-        <div class="project-hover-layer"  id="phone-sctoll-2">
-            <h3 id="phone-sctoll-2-h3">
-                More Information Soon<br>  
-                <div class="padding-hack"></div>                             
-                <a href="html/vratsa.html">Learn More</a>
-            </h3>
-        </div>
-    </div>
-    <div class="projects-gallery-row-element">
-        <img src="design/images/background_hydrogen_decade.jpg  ">
-        <div class="project-hover-layer"  id="phone-sctoll-3">
-            <h3 id="phone-sctoll-3-h3">
-                More Information Soon<br>  
-                <div class="padding-hack"></div>                
-                <a href="html/vratsa.html">Learn More</a>
-            </h3>
-        </div>
-    </div>
-</div>    
-</div>
-    
 
 <!------ Call To Action ------>
 
-<section class="cta" onclick="hideMenu()">
-    
+<section class="cta-section" onclick="hideMenu()">
+    <div class="cta">
        <h1>Discover the Power of Clean Energy:<br>Brighter, More Sustainable Future with <strong>Hydrogenify Ltd</strong>!</h1>
         <a href="html/about.html" class="hero-btn">LEARN MORE</a>
-    
+    </div>
 </section>    
  
 
-<!---------Partners Section-------->
-
-<div class="partners-section" onclick="hideMenu()">
+<!--------- banners -------->
+<div class="banners-section" onclick="hideMenu()">
     <h1>Our Partners</h1>
-    <div class="partners-flex-box">
+    <div class="banners-flex-box">
         <a  href = "https://www.hydrogenera.eu/en" target=”_blank”>
-            <img src="design/svg/hydrogenera_logo.svg" class="partners-flex-img-long">
+            <img src="design/svg/hydrogenera_logo.svg" class="banners-flex-img-long">
         </a>
         <a  href = "https://single-market-economy.ec.europa.eu/industry/strategy/industrial-alliances/european-clean-hydrogen-alliance_en" target=”_blank”>
-            <img src="design/images/cleanhydrogenalliance_banner.png" class="partners-flex-img-box">
+            <img src="design/images/cleanhydrogenalliance_banner.png" class="banners-flex-img-box">
         </a>
     </div>
 
@@ -238,14 +248,14 @@
 
 <!-------- footer ---------->
 
-<section class="footer" onclick="hideMenu()">
+<div class="footer" onclick="hideMenu()">
     <h4>About Us</h4>
     <p>
         Empowering a greener future with clean <strong>hydrogen</strong>, driving demand for innovative energy solutions. 
         <br> Join the clean energy revolution with <strong>Hydrogenify Ltd</strong>!</p>
 
     <p>All rights reserved by <strong>©Hydrogenify Ltd &ensp; 2023</strong></p>
-</section>     
+</div>     
 
 <script src="scripts.js"></script> 
 </body>
