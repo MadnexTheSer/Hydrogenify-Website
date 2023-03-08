@@ -14,3 +14,4 @@ Progress Notes:
   DONE -> rearrange the landing page sections
   DONE -> fix the Inquiry email
   DONE -> create a GitHub repository and upload the code, start tracking progress there
+09/03/2023
