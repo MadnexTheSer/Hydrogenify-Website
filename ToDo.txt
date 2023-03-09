@@ -1,7 +1,7 @@
 To Do:
-  fix products page to look better than -> hydrogenera.eu/en.
-  fix sitemap.xml, Google Search Console -> https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Ahydrogenify.co.uk
-
+-> fix products page to look better than -> hydrogenera.eu/en.
+-> fix sitemap.xml, Google Search Console -> https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Ahydrogenify.co.uk
+-> optimize landing page video
 ------------------------------------------------------------
 Progress Notes:
 
@@ -15,3 +15,5 @@ Progress Notes:
   DONE -> fix the Inquiry email
   DONE -> create a GitHub repository and upload the code, start tracking progress there
 09/03/2023
+  DONE -> fixed responsive bug for pages
+  TODO -> fix sitemap.xml, Google Search Console -> https://search.google.com/search-console/sitemaps?resource_id=sc-domain%3Ahydrogenify.co.uk
