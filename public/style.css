@@ -231,6 +231,71 @@ nav .fa{
 
 
 
+.arrows path {
+	stroke: var(--white);
+	fill: transparent;
+	stroke-width: 6px;	
+	animation: arrow 1.5s infinite;
+	-webkit-animation: arrow 1.5s infinite; 
+}
+
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/*---------- Video Section --------*/
+/*****************************************************************************************************************************************/
+
+
+.long-video{
+    width: 70%;
+    height: 70%;
+    padding-top: 50px;
+}
+
+.video-section{
+    width: 80%;
+    margin: -100px auto 5px auto;
+    text-align: center;
+    padding-top: 100px;
+    
+    height: 95vh;
+    min-height: 50vh;
+}
+
+.video-section p{
+    color: black;
+    padding-top: 25px;
+}
+
 /*---------- Services --------*/
 /*****************************************************************************************************************************************/
 .services-section{
